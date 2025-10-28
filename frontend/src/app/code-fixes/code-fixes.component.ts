@@ -15,7 +15,6 @@ export class CodeFixesComponent implements OnInit, DoCheck {
   differ: KeyValueDiffer<string, DiffTableFormat>
 
   constructor (private readonly cookieService: CookieService, private readonly differs: KeyValueDiffers) {
-    this.cookieService = cookieService
     this.differ = this.differs.find({}).create()
   }
 
